@@ -2,12 +2,11 @@
 To demonstrate best practices for confidential compute scenarios, in scenarios where the Customer Managed Key (CMK) used for disk encryption is in another subscription or even another tennant.  
 
 ![alt text](./images/Goal_CrossSubscription.drawio.svg "A title")
-
+On the picture teh keyvault is in another subscription, it can be the same subscription or anotehr tennant, depending on your scenario
 
 # Prerequisites
-- Have a keyvault with a key for disk encryption, mak sure tje keyvault has purge protection enabled.
+- Have a keyvault with a key for disk encryption, mak sure the keyvault has purge protection enabled.
 - Have a user assigned managed identity that has the "Key Vault Crypto Service Encryption User" role on the Key Vault.
-- 
 
 # Disk Encryption types
 https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-overview
@@ -16,7 +15,7 @@ https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption
 - Not compatible with encryption at host
 - Temp disks are not encrypted, if you want to encrypt temp disks use encryption at host.
 - Works with a disk encryption key set, Keys do not need to be in the same subscription.
-- PREVIEW: Keys do not need to be in the same tennant: https://learn.microsoft.com/en-us/azure/virtual-machines/disks-cross-tenant-customer-managed-keys?tabs=azure-portal
+- Keys do not need to be in the same tennant: https://learn.microsoft.com/en-us/azure/virtual-machines/disks-cross-tenant-customer-managed-keys?tabs=azure-portal
 - More restrictions apply: https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption#restrictions
 
 
