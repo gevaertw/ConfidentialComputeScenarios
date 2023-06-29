@@ -1,11 +1,11 @@
 # Goal
 To demonstrate best practices for confidential compute scenarios, in scenarios where the Customer Managed Key (CMK) used for disk encryption is in another subscription or even another tennant.  
 
-![alt text](./Goal_CrossSubscription.drawio.svg "A title")
+![alt text](./images/Goal_CrossSubscription.drawio.svg "A title")
 
 
 # Prerequisites
-- Have a keyvault with a key for disk encryption
+- Have a keyvault with a key for disk encryption, mak sure tje keyvault has purge protection enabled.
 - Have a user assigned managed identity that has the "Key Vault Crypto Service Encryption User" role on the Key Vault.
 - 
 
@@ -31,6 +31,8 @@ https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption#encrypt
 ## Azure Disk Encryption
 https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-overview
 https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-overview
+
+
 
 - Requires that the keyvault where the CMK is stored is in the same region and subscription as the VM.
 - Cannot work on custom Linux Images.  
@@ -59,10 +61,10 @@ Below you find the references in the Bicep code and portal screeshots explained
 
 # Result
 ## Virtual Machine
-![alt text](./PortalVM.png "Title")
+![alt text](./images/PortalVM.png "Title")
 - The security type is confidential
 - Encryption at host encryption method selected, you cannot have both
 
 ## Disks
-![alt text](./PortalDisk.png "Title")
+![alt text](./images/PortalDisk.png "Title")
 Both disks 
