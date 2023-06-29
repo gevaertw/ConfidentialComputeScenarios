@@ -1,10 +1,10 @@
 # Goal
 To demonstrate best practices for confidential compute scenarios, in scenarios where the Customer Managed Key (CMK) used for disk encryption is in another subscription or even another tennant.  
 ## Cross subscription 
-![alt text](./goal_CrossSubscription.drawio.svg "A title")
+![alt text](./Goal_CrossSubscription.drawio.svg "A title")
 
 ## Cross tenant
-![alt text](./goal_CrossTenant.drawio.svg "A title")
+![alt text](./Goal_CrossTenant.drawio.svg "A title")
 
 https://learn.microsoft.com/en-us/azure/virtual-machines/disks-cross-tenant-customer-managed-keys?tabs=azure-portal
 
