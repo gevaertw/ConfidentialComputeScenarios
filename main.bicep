@@ -48,7 +48,6 @@ var confidentialVMVnetAddressSpace = '10.0.0.0/20'
 var confidentialVMName = 'vm-appsrv01'
 
 
-
 // Deploy RG's
 targetScope = 'subscription'
 resource rg_ACCscenarios_confidentialVM_Resource 'Microsoft.Resources/resourceGroups@2021-01-01' = {
@@ -72,8 +71,8 @@ module vNet_ACCscenarios_confidentialVM_Module 'createvNetSubnets.bicep' = {
   }
 }
 
-// Deploy the VM
-module ACCscenarios_confidentialVM_Resource_mod 'ACCscenarios_confidentialVM.bicep' ={
+// Deploy the VM using a key that is in a keyvault in another subscription
+module ACCscenarios_confidentialVM_Resource_mod 'ACCscenarios_confidentialVM_CrossSubscriptioKey.bicep' = {
   name: 'ACCscenarios_confidentialVM_Resource_mod'
   scope: resourceGroup('rg-ACCscenarios-confidentialVM')
   dependsOn: [
