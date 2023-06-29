@@ -72,7 +72,7 @@ module vNet_ACCscenarios_confidentialVM_Module 'createvNetSubnets.bicep' = {
 }
 
 // Deploy the VM using a key that is in a keyvault in another subscription
-module ACCscenarios_confidentialVM_Resource_mod 'ACCscenarios_confidentialVM_CrossSubscriptioKey.bicep' = {
+module ACCscenarios_confidentialVM_Resource_mod 'ACCscenarios_confidentialVM_CrossSubscriptionKey.bicep' = {
   name: 'ACCscenarios_confidentialVM_Resource_mod'
   scope: resourceGroup('rg-ACCscenarios-confidentialVM')
   dependsOn: [

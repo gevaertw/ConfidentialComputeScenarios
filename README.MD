@@ -1,12 +1,8 @@
 # Goal
 To demonstrate best practices for confidential compute scenarios, in scenarios where the Customer Managed Key (CMK) used for disk encryption is in another subscription or even another tennant.  
-## Cross subscription 
+
 ![alt text](./Goal_CrossSubscription.drawio.svg "A title")
 
-## Cross tenant
-![alt text](./Goal_CrossTenant.drawio.svg "A title")
-
-https://learn.microsoft.com/en-us/azure/virtual-machines/disks-cross-tenant-customer-managed-keys?tabs=azure-portal
 
 # Prerequisites
 - Have a keyvault with a key for disk encryption
@@ -22,7 +18,6 @@ https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption
 - Works with a disk encryption key set, Keys do not need to be in the same subscription.
 - PREVIEW: Keys do not need to be in the same tennant: https://learn.microsoft.com/en-us/azure/virtual-machines/disks-cross-tenant-customer-managed-keys?tabs=azure-portal
 - More restrictions apply: https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption#restrictions
-- 
 
 
 ## Encryption at Host
