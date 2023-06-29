@@ -1,5 +1,5 @@
 # Goal
-To demonstrate best practices for confidential compute scenarios, in scenarios where the Customer Managed Key (CMK) used for disk encryption is in another subscription or even another tennant.  
+To demonstrate best practices for confidential compute scenarios, in scenarios where the Customer Managed Key (CMK) used for disk encryption is in another subscription.  
 
 ![alt text](./images/Goal_CrossSubscription.drawio.svg "A title")
 On the picture teh keyvault is in another subscription, it can be the same subscription or anotehr tennant, depending on your scenario
