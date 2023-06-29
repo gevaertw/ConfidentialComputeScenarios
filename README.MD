@@ -67,4 +67,4 @@ Below you find the references in the Bicep code and portal screeshots explained
 
 ## Disks
 ![alt text](./images/PortalDisk.png "Title")
-Both disks 
+Both disks are encrypted.
